@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="1" errors="0" time="5.849">
+  <testsuite name="Categories" errors="0" failures="1" skipped="0" timestamp="2025-06-16T18:29:21" time="5.797" tests="4">
+    <testcase classname="Categories GET / Categories" name="Categories GET / Categories" time="1.209">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 400
+Received: 200
+    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/categories.spec.ts:11:32
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/categories.spec.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Categories Crate Categories POST/ categories" name="Categories Crate Categories POST/ categories" time="0.475">
+    </testcase>
+    <testcase classname="Categories Update categories PUT/ categories" name="Categories Update categories PUT/ categories" time="0.409">
+    </testcase>
+    <testcase classname="Categories Delete Categories DELETE / categories" name="Categories Delete Categories DELETE / categories" time="0.406">
+    </testcase>
+  </testsuite>
+</testsuites>
