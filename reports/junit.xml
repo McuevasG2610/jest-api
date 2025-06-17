@@ -1,316 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="46" failures="17" errors="0" time="13.5">
-  <testsuite name="POC Test" errors="0" failures="0" skipped="0" timestamp="2025-06-16T18:56:55" time="7.592" tests="6">
-    <testcase classname="POC Test GET Request GET /post" name="POC Test GET Request GET /post" time="0.508">
+<testsuites name="jest tests" tests="33" failures="0" errors="0" time="10.466">
+  <testsuite name="POC Test" errors="0" failures="0" skipped="0" timestamp="2025-06-17T15:07:19" time="4.346" tests="6">
+    <testcase classname="POC Test GET Request GET /post" name="POC Test GET Request GET /post" time="0.353">
     </testcase>
-    <testcase classname="POC Test GET Request GET / comments whit query params" name="POC Test GET Request GET / comments whit query params" time="0.138">
+    <testcase classname="POC Test GET Request GET / comments whit query params" name="POC Test GET Request GET / comments whit query params" time="0.34">
     </testcase>
-    <testcase classname="POC Test POST request POST / posts" name="POC Test POST request POST / posts" time="0.253">
+    <testcase classname="POC Test POST request POST / posts" name="POC Test POST request POST / posts" time="0.171">
     </testcase>
-    <testcase classname="POC Test PUT Request PUT / post/{id}" name="POC Test PUT Request PUT / post/{id}" time="0.458">
+    <testcase classname="POC Test PUT Request PUT / post/{id}" name="POC Test PUT Request PUT / post/{id}" time="0.46">
     </testcase>
-    <testcase classname="POC Test PATCH Request PATCH / post/{id}" name="POC Test PATCH Request PATCH / post/{id}" time="0.369">
+    <testcase classname="POC Test PATCH Request PATCH / post/{id}" name="POC Test PATCH Request PATCH / post/{id}" time="0.382">
     </testcase>
-    <testcase classname="POC Test DELETE Request DELETE /post/{id}" name="POC Test DELETE Request DELETE /post/{id}" time="0.268">
-    </testcase>
-  </testsuite>
-  <testsuite name="Upload File" errors="0" failures="0" skipped="0" timestamp="2025-06-16T18:56:55" time="7.84" tests="2">
-    <testcase classname="Upload File POST /upload/single" name="Upload File POST /upload/single" time="1.267">
-    </testcase>
-    <testcase classname="Upload File POST /upload/multiple" name="Upload File POST /upload/multiple" time="0.876">
+    <testcase classname="POC Test DELETE Request DELETE /post/{id}" name="POC Test DELETE Request DELETE /post/{id}" time="0.277">
     </testcase>
   </testsuite>
-  <testsuite name="API PETS" errors="0" failures="3" skipped="0" timestamp="2025-06-16T18:56:55" time="7.933" tests="8">
-    <testcase classname="API PETS GET /pet/:id" name="API PETS GET /pet/:id" time="0.295">
+  <testsuite name="Upload File" errors="0" failures="0" skipped="0" timestamp="2025-06-17T15:07:19" time="4.369" tests="2">
+    <testcase classname="Upload File POST /upload/single" name="Upload File POST /upload/single" time="0.992">
     </testcase>
-    <testcase classname="API PETS GET /pet/findByStatus should return pets with status available" name="API PETS GET /pet/findByStatus should return pets with status available" time="0.472">
-    </testcase>
-    <testcase classname="API PETS GET /pet/findByStatus should return pets with status pending" name="API PETS GET /pet/findByStatus should return pets with status pending" time="0.289">
-    </testcase>
-    <testcase classname="API PETS GET /pet/findByStatus should return pets with status sold" name="API PETS GET /pet/findByStatus should return pets with status sold" time="0.306">
-    </testcase>
-    <testcase classname="API PETS Update an existing pet creates a new pet con id dinámico" name="API PETS Update an existing pet creates a new pet con id dinámico" time="0.288">
-    </testcase>
-    <testcase classname="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status available" name="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status available" time="0.001">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;toString&apos;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:69:45
-    at Generator.next (&lt;anonymous&gt;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:8:71
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt;.__awaiter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:4:12)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:67:75
-    at Object.&lt;anonymous&gt; (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-each/build/bind.js:81:13)
-    at Promise.then.completed (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status pending" name="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status pending" time="0">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;toString&apos;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:69:45
-    at Generator.next (&lt;anonymous&gt;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:8:71
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt;.__awaiter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:4:12)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:67:75
-    at Object.&lt;anonymous&gt; (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-each/build/bind.js:81:13)
-    at Promise.then.completed (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status sold" name="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status sold" time="0">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;toString&apos;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:69:45
-    at Generator.next (&lt;anonymous&gt;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:8:71
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt;.__awaiter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:4:12)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/pets.spec.ts:67:75
-    at Object.&lt;anonymous&gt; (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-each/build/bind.js:81:13)
-    at Promise.then.completed (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    <testcase classname="Upload File POST /upload/multiple" name="Upload File POST /upload/multiple" time="0.783">
     </testcase>
   </testsuite>
-  <testsuite name="Brands" errors="0" failures="13" skipped="0" timestamp="2025-06-16T18:56:55" time="9.287" tests="13">
-    <testcase classname="Brands Fetch brands GET /brands" name="Brands Fetch brands GET /brands" time="0.528">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 200
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:10:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+  <testsuite name="API PETS" errors="0" failures="0" skipped="0" timestamp="2025-06-17T15:07:19" time="5.368" tests="8">
+    <testcase classname="API PETS GET /pet/:id" name="API PETS GET /pet/:id" time="0.288">
     </testcase>
-    <testcase classname="Brands Create brands POST /brands" name="Brands Create brands POST /brands" time="0.254">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 200
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:27:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS GET /pet/findByStatus should return pets with status available" name="API PETS GET /pet/findByStatus should return pets with status available" time="0.37">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Name is a mandatory field" name="Brands Create brands Schema Verification - Name is a mandatory field" time="0.267">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:43:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS GET /pet/findByStatus should return pets with status pending" name="API PETS GET /pet/findByStatus should return pets with status pending" time="0.319">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Min char length for name &gt; 1" name="Brands Create brands Schema Verification - Min char length for name &gt; 1" time="0.19">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:56:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS GET /pet/findByStatus should return pets with status sold" name="API PETS GET /pet/findByStatus should return pets with status sold" time="0.296">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Max char length for name = 30" name="Brands Create brands Schema Verification - Max char length for name = 30" time="0.298">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:69:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS Update an existing pet creates a new pet con id dinámico" name="API PETS Update an existing pet creates a new pet con id dinámico" time="0.253">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Description must be a string" name="Brands Create brands Schema Verification - Description must be a string" time="0.262">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:84:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status available" name="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status available" time="0.274">
     </testcase>
-    <testcase classname="Brands Create brands Business Logic - Duplicate brand entries not allowed" name="Brands Create brands Business Logic - Duplicate brand entries not allowed" time="0.552">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:102:31
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status pending" name="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status pending" time="0.256">
     </testcase>
-    <testcase classname="Brands Fetch Individual Brand GET /brand/:id Business Logic - GET /brand/invalid_id should throw 404" name="Brands Fetch Individual Brand GET /brand/:id Business Logic - GET /brand/invalid_id should throw 404" time="0.312">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 404
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:123:32
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
-    </testcase>
-    <testcase classname="Brands Fetch Individual Brand GET /brand/:id GET /brand/:id" name="Brands Fetch Individual Brand GET /brand/:id GET /brand/:id" time="0.264">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 200
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:129:32
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
-    </testcase>
-    <testcase classname="Brands Update brands PUT /brands" name="Brands Update brands PUT /brands" time="0.001">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;name&apos;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:138:26
-    at Generator.next (&lt;anonymous&gt;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:8:71
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt;.__awaiter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:4:12)
-    at Object.&lt;anonymous&gt; (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:136:34)
-    at Promise.then.completed (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Brands Update brands PUT /brands/invalid_id" name="Brands Update brands PUT /brands/invalid_id" time="0.203">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:155:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
-    </testcase>
-    <testcase classname="Brands Delete Brands DELETE /brands" name="Brands Delete Brands DELETE /brands" time="0">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;_id&apos;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:163:39
-    at Generator.next (&lt;anonymous&gt;)
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:8:71
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt;.__awaiter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:4:12)
-    at Object.&lt;anonymous&gt; (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:161:37)
-    at Promise.then.completed (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at _runTestsForDescribeBlock (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Brands Delete Brands DELETE /brands/invalid_id" name="Brands Delete Brands DELETE /brands/invalid_id" time="0.576">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 422
-Received: 503
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:169:30
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/brend.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    <testcase classname="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status sold" name="API PETS Updates a pet in the store whit form data POST /pet/{petId} and status sold" time="0.272">
     </testcase>
   </testsuite>
-  <testsuite name="Categories" errors="0" failures="1" skipped="0" timestamp="2025-06-16T18:56:55" time="10.115" tests="4">
-    <testcase classname="Categories GET / Categories" name="Categories GET / Categories" time="1.388">
-      <failure>Error: expect(received).toEqual(expected) // deep equality
-
-Expected: 400
-Received: 200
-    at /Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/categories.spec.ts:11:32
-    at Generator.next (&lt;anonymous&gt;)
-    at fulfilled (/Users/manuelcuevasgarcia/Documents/AUTOMATION/TypeScripy/course_api_testing/specs/categories.spec.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+  <testsuite name="Categories" errors="0" failures="0" skipped="0" timestamp="2025-06-17T15:07:19" time="7.076" tests="4">
+    <testcase classname="Categories GET / Categories" name="Categories GET / Categories" time="1.182">
     </testcase>
-    <testcase classname="Categories Crate Categories POST/ categories" name="Categories Crate Categories POST/ categories" time="0.417">
+    <testcase classname="Categories Crate Categories POST/ categories" name="Categories Crate Categories POST/ categories" time="0.44">
     </testcase>
-    <testcase classname="Categories Update categories PUT/ categories" name="Categories Update categories PUT/ categories" time="0.401">
+    <testcase classname="Categories Update categories PUT/ categories" name="Categories Update categories PUT/ categories" time="0.408">
     </testcase>
-    <testcase classname="Categories Delete Categories DELETE / categories" name="Categories Delete Categories DELETE / categories" time="0.418">
+    <testcase classname="Categories Delete Categories DELETE / categories" name="Categories Delete Categories DELETE / categories" time="0.404">
     </testcase>
   </testsuite>
-  <testsuite name="Brands" errors="0" failures="0" skipped="0" timestamp="2025-06-16T18:56:55" time="12.882" tests="13">
-    <testcase classname="Brands Fetch brands GET /brands" name="Brands Fetch brands GET /brands" time="1.973">
+  <testsuite name="Brands" errors="0" failures="0" skipped="0" timestamp="2025-06-17T15:07:19" time="9.93" tests="13">
+    <testcase classname="Brands Fetch brands GET /brands" name="Brands Fetch brands GET /brands" time="1.656">
     </testcase>
-    <testcase classname="Brands Create brands POST /brands" name="Brands Create brands POST /brands" time="0.003">
+    <testcase classname="Brands Create brands POST /brands" name="Brands Create brands POST /brands" time="0.002">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Name is a mandatory field" name="Brands Create brands Schema Verification - Name is a mandatory field" time="0.207">
+    <testcase classname="Brands Create brands Schema Verification - Name is a mandatory field" name="Brands Create brands Schema Verification - Name is a mandatory field" time="0.212">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Min char length for name &gt; 1" name="Brands Create brands Schema Verification - Min char length for name &gt; 1" time="0.232">
+    <testcase classname="Brands Create brands Schema Verification - Min char length for name &gt; 1" name="Brands Create brands Schema Verification - Min char length for name &gt; 1" time="0.266">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Max char length for name = 30" name="Brands Create brands Schema Verification - Max char length for name = 30" time="0.214">
+    <testcase classname="Brands Create brands Schema Verification - Max char length for name = 30" name="Brands Create brands Schema Verification - Max char length for name = 30" time="0.219">
     </testcase>
-    <testcase classname="Brands Create brands Schema Verification - Description must be a string" name="Brands Create brands Schema Verification - Description must be a string" time="0.207">
+    <testcase classname="Brands Create brands Schema Verification - Description must be a string" name="Brands Create brands Schema Verification - Description must be a string" time="0.218">
     </testcase>
-    <testcase classname="Brands Create brands Business Logic - Duplicate brand entries not allowed" name="Brands Create brands Business Logic - Duplicate brand entries not allowed" time="0.304">
+    <testcase classname="Brands Create brands Business Logic - Duplicate brand entries not allowed" name="Brands Create brands Business Logic - Duplicate brand entries not allowed" time="0.311">
     </testcase>
-    <testcase classname="Brands Fetch Individual Brand GET /brand/:id Business Logic - GET /brand/invalid_id should throw 404" name="Brands Fetch Individual Brand GET /brand/:id Business Logic - GET /brand/invalid_id should throw 404" time="0.306">
+    <testcase classname="Brands Fetch Individual Brand GET /brand/:id Business Logic - GET /brand/invalid_id should throw 404" name="Brands Fetch Individual Brand GET /brand/:id Business Logic - GET /brand/invalid_id should throw 404" time="0.305">
     </testcase>
-    <testcase classname="Brands Fetch Individual Brand GET /brand/:id GET /brand/:id" name="Brands Fetch Individual Brand GET /brand/:id GET /brand/:id" time="0.307">
+    <testcase classname="Brands Fetch Individual Brand GET /brand/:id GET /brand/:id" name="Brands Fetch Individual Brand GET /brand/:id GET /brand/:id" time="0.346">
     </testcase>
-    <testcase classname="Brands Update brands PUT /brands" name="Brands Update brands PUT /brands" time="0.409">
+    <testcase classname="Brands Update brands PUT /brands" name="Brands Update brands PUT /brands" time="0.406">
     </testcase>
     <testcase classname="Brands Update brands PUT /brands/invalid_id" name="Brands Update brands PUT /brands/invalid_id" time="0.213">
     </testcase>
-    <testcase classname="Brands Delete Brands DELETE /brands" name="Brands Delete Brands DELETE /brands" time="0.424">
+    <testcase classname="Brands Delete Brands DELETE /brands" name="Brands Delete Brands DELETE /brands" time="0.402">
     </testcase>
-    <testcase classname="Brands Delete Brands DELETE /brands/invalid_id" name="Brands Delete Brands DELETE /brands/invalid_id" time="0.218">
+    <testcase classname="Brands Delete Brands DELETE /brands/invalid_id" name="Brands Delete Brands DELETE /brands/invalid_id" time="0.215">
     </testcase>
   </testsuite>
 </testsuites>

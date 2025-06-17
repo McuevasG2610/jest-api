@@ -8,7 +8,7 @@ import {getCategoryId,login} from '../utis/helper';
 describe('Categories', () => {
     it('GET / Categories', async() =>{
         const res = await controller.getCategories();
-        expect(res.statusCode).toEqual(400);
+        expect(res.statusCode).toEqual(200);
         expect(res.body.length).toBeGreaterThan(1);
         expect(Object.keys(res.body[0])).toEqual(['_id','name'])
     });
